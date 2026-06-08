@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Roekish — Odoo, sans angle mort.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F6F5F2"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.82" cy="0.12" r="0.5">
+      <stop offset="0" stop-color="#C75B39" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#C75B39" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect x="6" y="6" width="1188" height="618" rx="20" fill="none" stroke="#ECEAE5" stroke-width="2"/>
+
+  <!-- logo lockup -->
+  <g transform="translate(96,92)">
+    <svg width="56" height="56" viewBox="0 0 44 44">
+      <path d="M10 8 H30 a6 6 0 0 1 6 6 V30 a6 6 0 0 1 -6 6 H16 a6 6 0 0 1 -6 -6 V8" fill="none" stroke="#0F2230" stroke-width="2.6" stroke-linecap="round"/>
+      <line x1="16" y1="23" x2="30" y2="23" stroke="#0F2230" stroke-width="2.6" stroke-linecap="round"/>
+      <circle cx="23" cy="23" r="3.4" fill="#C75B39"/>
+    </svg>
+    <text x="74" y="40" font-family="'Hanken Grotesk',Arial,sans-serif" font-size="40" font-weight="600" fill="#0F2230" letter-spacing="-1">Ro<tspan fill="#C75B39">e</tspan>kish</text>
+  </g>
+
+  <!-- headline -->
+  <text x="96" y="330" font-family="'Spectral',Georgia,serif" font-size="104" font-weight="600" fill="#0F2230" letter-spacing="-2">Odoo,</text>
+  <text x="96" y="438" font-family="'Spectral',Georgia,serif" font-size="104" font-weight="600" fill="#0F2230" letter-spacing="-2">sans angle mort.</text>
+
+  <!-- subline -->
+  <text x="98" y="520" font-family="'Hanken Grotesk',Arial,sans-serif" font-size="30" fill="#4F5B64">Intégrateur Odoo à engagement transparent — prix publiés, périmètre garanti.</text>
+
+  <!-- proof chips -->
+  <g font-family="'Hanken Grotesk',Arial,sans-serif" font-size="20" font-weight="600">
+    <rect x="96" y="556" width="232" height="40" rx="20" fill="#FFFFFF" stroke="#ECEAE5"/>
+    <text x="116" y="582" fill="#4F5B64">Rien à cacher</text>
+    <rect x="344" y="556" width="262" height="40" rx="20" fill="#FFFFFF" stroke="#ECEAE5"/>
+    <text x="364" y="582" fill="#4F5B64">Périmètre garanti</text>
+    <rect x="622" y="556" width="266" height="40" rx="20" fill="#FFFFFF" stroke="#ECEAE5"/>
+    <text x="642" y="582" fill="#4F5B64">Dashboard client 24/7</text>
+  </g>
+</svg>

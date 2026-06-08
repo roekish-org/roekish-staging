@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" role="img" aria-label="Roekish">
+  <rect width="44" height="44" rx="9" fill="#F6F5F2"/>
+  <path d="M10 8 H30 a6 6 0 0 1 6 6 V30 a6 6 0 0 1 -6 6 H16 a6 6 0 0 1 -6 -6 V8" fill="none" stroke="#0F2230" stroke-width="2.6" stroke-linecap="round"/>
+  <line x1="16" y1="23" x2="30" y2="23" stroke="#0F2230" stroke-width="2.6" stroke-linecap="round"/>
+  <circle cx="23" cy="23" r="3.4" fill="#C75B39"/>
+</svg>

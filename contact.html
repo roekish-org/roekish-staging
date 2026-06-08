@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Réserver un cadrage Odoo | Roekish</title>
+<meta name="description" content="Contactez Roekish pour un cadrage métier Odoo à prix fixe. Décrivez votre projet, on revient vers vous avec un périmètre clair et un devis lisible en une page.">
+<link rel="canonical" href="https://roekish.fr/contact.html">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#0F2230">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Roekish">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://roekish.fr/contact.html">
+<meta property="og:title" content="Contact — Réserver un cadrage Odoo | Roekish">
+<meta property="og:description" content="Décrivez votre projet Odoo. On revient vers vous avec un périmètre clair et un prix engagé.">
+<meta property="og:image" content="https://roekish.fr/assets/og-image.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://roekish.fr/assets/og-image.svg">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="stylesheet" href="assets/roekish.css">
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<nav class="nav" aria-label="Navigation principale"><div class="wrap">
+  <a class="brand" href="index.html" aria-label="Roekish — accueil">
+    <svg class="logo-symbol" width="30" height="30" viewBox="0 0 44 44" fill="none" aria-hidden="true"><path d="M8 6 H30 a6 6 0 0 1 6 6 V30 a6 6 0 0 1 -6 6 H14 a6 6 0 0 1 -6 -6 V6" stroke="#0F2230" stroke-width="2.6" stroke-linecap="round"/><line x1="14" y1="22" x2="30" y2="22" stroke="#0F2230" stroke-width="2.6" stroke-linecap="round"/><circle cx="22" cy="22" r="3.4" fill="#C75B39"/></svg>
+    Ro<span class="oe">e</span>kish
+  </a>
+  <button class="nav-toggle" aria-label="Ouvrir le menu" aria-controls="nav-links" aria-expanded="false"><span></span><span></span><span></span></button>
+  <div class="nav-links" id="nav-links">
+    <a href="methode.html">Notre méthode</a>
+    <a href="prix.html">Nos prix</a>
+    <a href="etudes-de-cas.html">Études de cas</a>
+    <a href="a-propos.html">À propos</a>
+    <a class="btn btn-accent" href="contact.html" style="height:40px">Réserver un cadrage</a>
+  </div>
+</div></nav>
+
+<main id="main">
+
+<header class="hero"><div class="wrap">
+  <p class="eyebrow" data-reveal>Contact</p>
+  <h1 class="display" data-reveal data-reveal-delay="1" style="margin-top:18px;max-width:16ch">Décrivez votre projet. On éclaire le reste.</h1>
+  <p class="lead" data-reveal data-reveal-delay="2" style="max-width:54ch">Un premier échange sans engagement. On revient vers vous avec un périmètre clair et, si vous le souhaitez, une proposition de cadrage métier.</p>
+</div></header>
+
+<section style="padding-top:32px"><div class="wrap">
+  <div class="split" style="align-items:start">
+    <!-- data-endpoint : laissé vide → repli mailto sûr (intérim avant go-live).
+         À l'activation (gate publication CEO), renseigner l'URL POST réelle.
+         Backend recommandé : contrôleur Odoo crm.lead auto-hébergé (RGPD-clean).
+         Voir website/README.md § « Brancher le formulaire ». -->
+    <form class="card lead-form" id="lead-form" data-reveal style="padding:34px"
+          action="mailto:contact@roekish.fr" method="post" enctype="text/plain"
+          data-lead-to="contact@roekish.fr" data-endpoint="" novalidate>
+      <div class="form-body">
+        <p class="muted" style="font-size:13.5px;margin-bottom:20px">Champs marqués d'un <span style="color:var(--terracotta)">*</span> requis.</p>
+        <p class="form-status" role="status" aria-live="polite" hidden></p>
+        <div class="field"><label for="nom">Nom <span style="color:var(--terracotta)">*</span></label><input id="nom" name="nom" type="text" autocomplete="name" required aria-describedby="nom-err"><span class="field-err" id="nom-err" role="alert"></span></div>
+        <div class="field"><label for="email">Email professionnel <span style="color:var(--terracotta)">*</span></label><input id="email" name="email" type="email" autocomplete="email" placeholder="contact@entreprise.fr" required aria-describedby="email-err"><span class="field-err" id="email-err" role="alert"></span></div>
+        <div class="field"><label for="entreprise">Entreprise</label><input id="entreprise" name="entreprise" type="text" autocomplete="organization"></div>
+        <div class="field"><label for="sujet">Votre besoin</label>
+          <select id="sujet" name="sujet">
+            <option value="cadrage">Démarrer par un cadrage métier</option>
+            <option value="devis">Obtenir un devis une page (Périmètre Garanti)</option>
+            <option value="regie">Régie accompagnée / évolutions</option>
+            <option value="autre">Autre question</option>
+          </select>
+        </div>
+        <div class="field"><label for="message">Votre projet en quelques lignes</label><textarea id="message" name="message" placeholder="Vos outils actuels, vos irritants, ce que vous attendez d'Odoo…"></textarea></div>
+        <!-- anti-spam honeypot : champ masqué, hors tab order — ne pas remplir -->
+        <div class="hp" aria-hidden="true"><label for="company_url">Ne pas remplir</label><input id="company_url" name="company_url" type="text" tabindex="-1" autocomplete="off"></div>
+        <button class="btn btn-accent btn-lg" type="submit" style="width:100%"><span class="spin" aria-hidden="true"></span>Envoyer ma demande</button>
+        <p class="muted" style="font-size:12.5px;margin-top:14px;text-align:center">En envoyant ce formulaire, vous acceptez d'être recontacté au sujet de votre demande. Vos données sont traitées conformément à notre <a href="confidentialite.html" style="color:var(--encre-60);text-decoration:underline;text-underline-offset:3px">politique de confidentialité</a>.</p>
+      </div>
+      <div class="form-done" role="status">
+        <span class="tick" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.5 4.5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <h2 style="font-size:22px">Demande envoyée.</h2>
+        <p class="muted" style="margin-top:8px;max-width:36ch;margin-inline:auto">Merci — on revient vers vous rapidement pour un premier échange. Un accusé arrive par email.</p>
+      </div>
+    </form>
+
+    <aside data-reveal data-reveal-delay="1">
+      <h2 style="font-size:24px;margin-bottom:8px">Ce qui se passe ensuite</h2>
+      <div class="steps" style="margin-top:18px">
+        <div class="steprow" style="padding:20px 22px"><span class="n" aria-hidden="true"></span><div><h3 style="font-size:18px">On vous rappelle</h3><p class="muted" style="font-size:14.5px;margin-top:4px">Un échange court pour comprendre votre contexte et vos priorités.</p></div></div>
+        <div class="steprow" style="padding:20px 22px"><span class="n" aria-hidden="true"></span><div><h3 style="font-size:18px">On cadre le besoin</h3><p class="muted" style="font-size:14.5px;margin-top:4px">Proposition de cadrage métier à prix fixe, ou réponse directe si c'est plus simple.</p></div></div>
+        <div class="steprow" style="padding:20px 22px"><span class="n" aria-hidden="true"></span><div><h3 style="font-size:18px">Vous décidez</h3><p class="muted" style="font-size:14.5px;margin-top:4px">Avec un périmètre clair et un prix engagé. Sans pression, sans tunnel.</p></div></div>
+      </div>
+      <div class="card" style="margin-top:24px;background:var(--papier);border:none">
+        <p class="eyebrow">Préférez l'email ?</p>
+        <p style="margin-top:8px"><a class="btn-ghost" href="mailto:contact@roekish.fr">contact@roekish.fr</a></p>
+      </div>
+    </aside>
+  </div>
+</div></section>
+
+</main>
+
+<footer class="foot"><div class="wrap">
+  <div class="foot-grid">
+    <div>
+      <a class="brand" href="index.html" style="font-size:19px">Ro<span class="oe">e</span>kish</a>
+      <p style="margin-top:12px;max-width:34ch">L'intégrateur Odoo à engagement transparent. Prix publiés, périmètre garanti, avancement visible 24/7.</p>
+      <p class="kicker" style="margin-top:14px;color:var(--encre-80)">« Odoo, sans angle mort. »</p>
+    </div>
+    <div><strong>Produit</strong><a href="methode.html">Notre méthode</a><a href="prix.html">Nos prix</a><a href="etudes-de-cas.html">Études de cas</a></div>
+    <div><strong>Entreprise</strong><a href="a-propos.html">À propos</a><a href="contact.html">Contact</a><a href="prix.html#faq">FAQ</a></div>
+    <div><strong>Légal</strong><a href="mentions-legales.html">Mentions légales</a><a href="cgv.html">CGV</a><a href="confidentialite.html">Confidentialité</a></div>
+  </div>
+  <div class="foot-bottom">
+    <span>© <span data-year>2026</span> Roekish — Partenaire d'intégration Odoo.</span>
+    <span>Fait en France · l10n_fr · Factur-X</span>
+  </div>
+</div></footer>
+
+<script src="assets/site.js" defer></script>
+</body>
+</html>

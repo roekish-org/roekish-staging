@@ -1,0 +1,4 @@
+# Staging build — NOT for indexing.
+# The production roekish.fr robots.txt lives in website/robots.txt.
+User-agent: *
+Disallow: /
